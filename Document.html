@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/photo/three.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            background-color: #1d3232;
+         }
+         .sub-container {
+            display: flex;
+         }
+        .container {
+           text-align: center;
+           color: #7617d4;
+           font-size: 20px;
+           padding-left: 100px;
+           padding-top: 20px;
+        }
+        .item-2 img {
+            width: 60px;
+            padding-left: 60px;
+            padding-bottom: 15px;
+        }
+        .item-3{
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        .item-1 {
+            margin: 0px;
+            padding-left: 70px;
+            padding-bottom: 15px;
+            font-size: larger;
+            padding-top: 10px;
+            font-weight: bold;
+            
+        }
+        .navbar {
+            height: 300px;
+            width: 250px;
+            border: 1px solid white;
+            margin-top: 100px;
+            background-color: aqua;
+            
+        }
+        .nav-2 img{
+            width: 60px;
+            padding-left: 60px;
+            padding-bottom: 15px;
+        }
+        .nav-3 {
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        .nav-1 {
+            margin: 0px;
+            padding-left: 80px;
+            padding-bottom: 15px;
+            font-size: larger;
+            padding-top: 10px;
+            font-weight: bold; 
+        }
+        .nav {
+            height: 300px;
+            width: 260px;
+            border: 1px solid white;
+            margin-top: 100px;
+            margin-left: 20px;
+            background-color: #d431ab;
+        }
+        .div-2 img {
+            width: 60px;
+            padding-left: 60px;
+            padding-bottom: 15px;   
+        }
+        .description {
+            height: 300px;
+            width: 260px;
+            margin-top: 100px;
+            margin-left: 20px;
+            border: 1px solid white;
+            background-color: #7617d4;
+            
+        }
+        .div-3 {
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        .div-1 {
+            margin: 0px;
+            padding-left: 55px;
+            padding-bottom: 15px;
+            font-size: larger;
+            padding-top: 10px;
+            font-weight: bold; 
+        }
+            
+        
+        
+    </style>
+</head>
+<body>
+    <div class="sub-container">
+   <div class="container">full stack web development</div> 
+   <!-- item -->
+   <div class="navbar">
+    <div class="item-1">html</div>
+    <div class="item-2"><img src="./Document_files/html.png" alt="img"></div> 
+    <div class="item-3">Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit. Neque, <br> eos pariatur. Magni <br> necessitatibus, explicabo modi ratione <br> alias amet eos corporis perspiciatis <br> harum quas ipsa a, itaque hic ut iusto ipsam? <br> Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. <br> Natus molestiae <br> architecto maxime quaerat magnam <br> consectetur </div>
+</div>
+    <!-- description -->
+
+    <div class="nav">
+        <div class="nav-1">css</div>
+        <div class="nav-2"><img src="./Document_files/css.png" alt="img"></div>
+        <div class="nav-3">Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit. Neque, <br> eos pariatur. Magni <br> necessitatibus, explicabo modi ratione <br> alias amet eos corporis perspiciatis <br> harum quas ipsa a, itaque hic ut iusto ipsam? <br> Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Natus molestiae <br> architecto maxime quaerat magnam consectetur obcaecati </div>
+    </div>
+    <!-- item one -->
+    <div class="description">
+     <div class="div-1">javascript</div>
+     <div class="div-2"><img src="./Document_files/javascript.png" alt="im"></div>
+     <div class="div-3">Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit. Neque, <br> eos pariatur. Magni <br> necessitatibus, explicabo modi ratione <br> alias amet eos corporis perspiciatis <br> harum quas ipsa a, itaque hic ut iusto ipsam? <br> Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Natus molestiae <br> architecto maxime <br> quaerat magnam consectetur obcaecati nihil,</div>
+    </div>
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

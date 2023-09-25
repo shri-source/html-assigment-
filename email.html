@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/photo/two.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+    <style>
+       .navbar {
+        display: flex;
+        padding: 20px;
+        margin: 20px;
+        
+       }
+       .nav>img {
+        width: 80px;
+        padding: 0;
+       }
+       .nav>h3 {
+        padding-left: 0;
+        margin: 10px;
+        margin-left: 0;
+       }
+       .nav-1>a {
+        margin-top: 20px;
+        margin: 100px;
+        padding-top: 30px;
+       }
+       .nav-2>a {
+        margin-top: 20px;
+        margin: 100px;
+        padding-top: 30px;
+       }
+       .nav-3>a {
+        margin-top: 20px;
+        margin: 100px;
+        padding-top: 30px;
+        background-color: #0062ff;
+       text-decoration: none;
+        border: 1px solid black;
+        color: aliceblue;
+       }
+       .nav-item>h1 {
+        padding: 15px;
+        font-size: 40px;
+       }
+       .nav-item>p{
+        margin: 0;
+       }
+       .item>img{
+        display: flex;
+        width: 400px;
+     
+        float: right;
+        padding-bottom: 0px;
+        padding-top: 10px;
+        margin-top: 0 10px;
+       }
+       .item-2>button{
+        margin-top: 40px;
+        height: 30px;
+        background-color: #0044ff;
+        color: aliceblue;
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav">
+            <img src="./email_files/email.png" alt="mg">
+        </div>
+
+        <div class="nav">
+            <h3>gmail</h3>
+        </div>
+        <div class="nav-1">
+            <a href="http://127.0.0.1:5500/photo/two.html#">for work</a>
+        </div>
+        <div class="nav-2">
+            <a href="http://127.0.0.1:5500/photo/two.html#">sing in</a>
+        </div>
+        <div class="nav-3">
+            <a href="http://127.0.0.1:5500/photo/two.html#">create an account</a>
+        </div>
+    </div>
+        <div class="nav-item">
+            <h1>secure,smart,<br>and easy to use</h1>
+            <p>get more done with gmail now
+                integrated with google <br> chat 
+                google meet and more all 
+                in one place
+            </p>
+            <div class="item-2">
+                <button>create account</button>
+            </div>
+            <div class="item">
+                <img src="./email_files/unnamed.webp" alt="img">
+            </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
